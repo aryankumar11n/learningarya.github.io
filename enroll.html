@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:#1a1110 ;
+        }
+        .nineth{
+         position: absolute;
+         width:120px;
+         height:80px;
+         top:70px;
+         left:30px;
+         text-align: center;
+         font-size: 25px;
+         font-family:Rockwell;
+         color:#ff3800;
+         background: rgba(255,255,255,0.2);
+         backdrop-filter: blur(15px);
+         text-transform: uppercase;
+         padding:5px;
+         font-weight: 10px;
+         
+         border-radius:10px;
+        }
+        .nineth:hover{
+            border:2px solid blue;
+        }
+        .tenth{
+         position: absolute;
+         width:120px;
+         height:80px;
+         top:70px;
+         left:250px;
+         text-align: center;
+         font-size: 25px;
+         font-family:Rockwell;
+         color:#ff3800;
+         background: rgba(255,255,255,0.2);
+         backdrop-filter: blur(15px);
+         text-transform: uppercase;
+         padding:5px;
+         font-weight: 10px;
+         
+         border-radius:10px;
+        }
+        .tenth:hover{
+            border:2px solid blue;
+        }
+        .eleventh{
+         position: absolute;
+         width:120px;
+         height:80px;
+         top:70px;
+         left:470px;
+         text-align: center;
+         font-size: 25px;
+         font-family:Rockwell;
+         color:#ff3800;
+         background: rgba(255,255,255,0.2);
+         backdrop-filter: blur(15px);
+         text-transform: uppercase;
+         padding:8px;
+         font-weight: 10px;
+         
+         border-radius:10px;
+        }
+        .eleventh:hover{
+            border:2px solid blue;
+        }
+        .twelveth{
+         position: absolute;
+         width:120px;
+         height:80px;
+         top:70px;
+         left:690px;
+         text-align: center;
+         font-size: 25px;
+         font-family:Rockwell;
+         color:#ff3800;
+         background: rgba(255,255,255,0.2);
+         backdrop-filter: blur(15px);
+         text-transform: uppercase;
+         padding:5px;
+         font-weight: 7px;
+         
+         border-radius:10px;
+        }
+        .twelveth:hover{
+            border:2px solid blue;
+        }
+        #sometext{
+            position: fixed;
+            top:20px;
+            left:25px;
+            font-size: 20px;
+            font-family: Bahnschrift SemiBold;
+            color:white;
+            box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+            
+        }
+        .board{
+            position: fixed;
+            top:230px;
+            left:25px;
+            font-size: 20px;
+            font-family: Bahnschrift SemiBold;
+            color:white;
+            box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+            
+        }
+        .photo img{
+            position: absolute;
+            height:100px;
+            width:200px;
+            left: 26px;
+            top:300px;
+            background-size: cover;
+            border-radius:20px;
+
+        }
+        .photo img:hover{
+            border:2px solid blue;
+        }
+        .image2 img{
+            position: absolute;
+            height:100px;
+            width:200px;
+            left: 300px;
+            top:300px;
+            background-size: cover;
+            border-radius:20px;
+        }
+        .image2 img:hover{
+            border:2px solid blue;
+        }
+        .next{
+            position:absolute;
+            left:600px;
+            top:510px;
+            text-align: center;
+            background:none;
+            border: 1px solid #3cd070;
+            padding:8px;
+            font-family: Comic Sans MS;
+            color:#3cd070;
+            width:60px;
+
+
+        }
+        .next:hover{
+            background-color: #3cd070;
+            color:#1a1110;
+        }
+        .sonal{
+            position:absolute;
+            width:250px;
+            height:150px;
+            top:-200px;
+            left:550px;
+            background:rgba(255,255,255,0.2);
+            backdrop-filter: white(10px);
+            border-radius: 20px;
+            color:black;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:20px;
+        }
+        #loda{
+            margin-left:110px;
+            width:30px;
+            height:30px;
+        }
+        .aryan{
+            position:absolute;
+            width:250px;
+            height:150px;
+            top:200px;
+            left:550px;
+            background:rgba(255,255,255,0.2);
+            backdrop-filter: white(10px);
+            border-radius: 20px;
+            color:black;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:20px;
+
+        }
+    </style>
+    <script>
+        function tooglemenu(){
+   let nav=document.querySelector('.sonal');
+    nav.classList.toggle('aryan');
+}
+   
+    </script>
+</head>
+<body>
+    <div id="sometext">
+        please select your class. 
+    </div>
+    <div id="full">
+    <div class="nineth">
+        class 9th
+    </div>
+    <div class="tenth">
+        class 10th
+    </div>
+    <div class="eleventh">
+        class 11th
+    </div>
+    <div class="twelveth">
+        class 12th
+    </div>
+</div>
+
+<div class="board">
+    please select your board.
+</div>
+<div class="photo">
+    <img src="cbselogo.jpg">
+    
+</div>
+<div class="image2"  onclick="tooglemenu()" >
+    <img src="icse.jpg" >
+</div>
+<div class="next">
+    next
+</div>
+<div class="sonal">
+    <svg xmlns="http://www.w3.org/2000/svg"  onclick="cross()" width="16" height="16" fill="currentColor"  id="loda" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+    </svg><br>
+    sorry currentle unavailable <br>
+    our engiiner works hardly<br> to provide 
+    you features!
+</div>
+</body>
+</html>

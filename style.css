@@ -1,0 +1,502 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+body{
+    height:150vh;
+    background-color:#6f00ff;
+    overflow-x: hidden;
+    
+
+
+}
+
+.container li{
+    font-size:17px;
+    color:white;
+    text-transform: uppercase;
+    background-color: #214fc6;
+    padding:9px;
+    font-family: Bahnschrift SemiBold;
+    list-style-type: none;
+    margin-top:7px;
+    
+
+}
+.container{
+    display:flex;
+    background-color:#214fc6;
+    height:45px;
+    
+}
+.container li:hover{
+    color:#66ff00;
+    cursor:pointer;
+}
+.searchbox input[type=text]{
+    background:none;
+    border-radius:40px;
+    width:140px;
+    height:20px;
+    border-color:#39ff14;
+    border-width:3px;
+    position:absolute;
+    right:6px;
+    top:8px;
+    text-align: center;
+    color:#39ff14;
+   
+
+}
+#icon3{
+    position:absolute;
+    width:40px;
+    height:14px;
+    top:11px;
+    right:160px;
+    border:2px solid #39ff14;
+    border-radius:40px;
+    padding:3px;
+    color:white;
+}
+.searchbox img{
+    position:absolute;
+    height:25px;
+    width:25px;
+    right:155px;
+    top:8px;
+    border:1px solid black;
+    border-radius:20px;
+    justify-content: center;
+}
+.searchbox #icon3:hover{
+    background-color:#66ff00;
+    color:black;
+}
+#likha{
+    position:absolute;
+    left:12px;
+    top:90px;
+    font-size:80px;
+    font-family: Lucida Bright;
+    text-transform: capitalize;
+    color:rgb(255, 255, 255);
+
+}
+#smalltext{
+    color:#f0fff0;
+    font-size: 20px;
+    font-family:Rockwell;
+    position: absolute;
+    left:17px;
+    top:380px;
+    text-transform: capitalize;
+}
+#likha::first-letter{
+    color:#ff4040 ;
+    font-size:90px;
+    font-weight:15px;
+}
+.light{
+    position:absolute;
+    top:500px;
+    left:60px;
+    padding:12px;
+    font-size: 25px;
+    color:#66ff00;
+    font-family:Tahoma;
+    font-weight:6px;
+    text-transform: capitalize;
+    border:2px solid #66ff00;
+    border-radius:30px;
+}
+.light:hover{
+    color:#6f00ff;
+    background-color:#66ff00;
+    box-shadow: 0 0 27px #66ff00, 0 0 33px #66ff00, 0 0 37px #66ff00;
+    cursor:pointer;
+}
+.wallpaper{
+    position:absolute;
+    right:55px;
+    top:120px;
+    
+}
+.wallpaper img{
+    height:65vh;
+    width:100vh;
+    opacity: 97%;
+   border-radius:15px; 
+}
+.wallpaper img:hover{
+    opacity: 80%;
+}
+#circle{
+    margin-left:80vh;
+    margin-top:20vh;
+    width:800px;
+    
+}
+#logo img{
+    position: absolute;
+    top:9vh;
+    right:58vh;
+    width:60vh;
+    height:38vh;
+    opacity: 90%;
+
+}
+.code{
+   
+    position: absolute;
+    top:-200px;
+    left:40%;
+    background-color:white;
+    border-radius: 16px;
+    color:black;
+    width:40vh;
+    height:20vh;
+    text-align: center;
+    padding-top:25px;
+    text-transform: capitalize;
+    font-family: Helvetica;
+    
+    
+}
+.code input[type="text"]{
+   
+    background:none;
+    border-color: #6f00ff;
+    border-radius: 20px;
+    width:130px;
+    height:30px;
+    margin-top:10px;
+     text-align: center;
+     color:black;
+    
+}
+.code2{
+    position: absolute;
+    top:50px;
+    left:40%;
+    background-color:white;
+    border-radius: 16px;
+    color:black;
+    width:40vh;
+    height:20vh;
+    text-align: center;
+    padding-top:25px;
+    text-transform: capitalize;
+    font-family: Helvetica;
+    animation: code 0.3s linear ease-in ;
+    transition:0.3s;
+}
+.blur{
+    
+    width:100vh;
+    height:100vh;
+    filter: blur(20);
+
+}
+.blur2{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgb(255, 255, 255,0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.2s;
+}
+.code a{
+    position:relative;
+    top:15px;
+    width:50px;
+    height:10px;
+}
+#okbutton{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 16vh;
+    left: 10vh;
+    background-color: #3fff00;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: Comic Sans MS;
+    padding: 4px;
+    color: black;
+    text-decoration: none;
+    font-size:14px;
+     
+     
+}
+#cancelbutton{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 16vh;
+    left: 21vh;
+    background-color: #ff4500;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: Comic Sans MS;
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+    font-size:12px;
+}
+@keyframes code
+{
+    100%{
+        bottom:200px;
+    }
+}
+.overlay{
+    position: absolute;
+    bottom:-400px;
+    right:-300px;
+    background-color:white;
+    border-radius: 16px;
+    color:black;
+    width:40vh;
+    height:20vh;
+    text-align: center;
+    padding-top:25px;
+    text-transform: capitalize;
+    font-family: Helvetica;
+    font-size:30px;
+    
+    
+}
+#done{
+    color:green;
+    height:30px;
+    width:30px;
+    
+}
+.overlay a{
+    position: relative;
+    width: 60px;
+    height: 24px;
+    top: 16px;
+    left: 7px;
+    background-color: #3fff00;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: Comic Sans MS;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+    font-size:27px;
+}
+.joker{
+    position: absolute;
+    top:100px;
+    left:40%;
+    background-color:white;
+    border-radius: 16px;
+    color:black;
+    width:40vh;
+    height:20vh;
+    text-align: center;
+    padding-top:25px;
+    text-transform: capitalize;
+    font-family: Helvetica;
+    font-size:30px;
+    animation: code 0.3s linear ease-in ;
+    transition:0.3s;
+    
+}
+.footer{
+    position:absolute;
+    bottom:-1500px;
+    width:100%;
+    height:70%;
+    background-color:black;
+}
+#othercourses{
+    
+    position:relative;
+    left:20%;
+    top:30%;
+
+
+}
+#othercourses a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0fc0fc;
+    text-transform: uppercase ;
+    text-decoration: none;
+}
+#othercourses h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 20px;
+    padding:3px;
+    text-transform: uppercase;
+    
+}
+#contact{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0fc0fc;
+    text-transform: uppercase ;
+    position:relative;
+    left:50%;
+    top:-18.4%;
+}
+#contact a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0fc0fc;
+    text-transform: uppercase ;
+    text-decoration: none;
+}
+#contact h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 20px;
+    padding:3px;
+    text-transform: uppercase;
+}
+#othercourses li{
+    padding:10px;
+    list-style-type: none;
+}
+#contact li{
+    padding:10px;
+    list-style-type: none;
+}
+#infologo{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0fc0fc;
+    text-transform: uppercase ;
+    position:relative;
+    left:80%;
+    top:-50%;
+    list-style-type: none;
+    
+    
+}
+#infologo a{
+
+font-family: Arial, Helvetica, sans-serif;
+    color:#0fc0fc;
+    text-transform: uppercase ;
+    text-decoration: none;
+}
+
+#infologo img{
+height:30px;
+width:30px;
+padding:2px;
+
+}
+.twoimage img{
+    border-radius:20px;
+    position: absolute;
+    bottom:-90vh;
+    left:40px;
+    height:70vh;
+    width:80vh;
+
+
+}
+.twoimage p{
+    position: absolute;
+    text-transform: capitalize;
+    right:38px;
+    bottom:-84vh;
+    color: white;
+    font-family:Lucida Bright;
+    font-size: 35px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    
+}
+.twoimage p::first-letter{
+    color:rgb(252, 31, 31);
+    font-size: 50px;
+
+}
+#othercourses li:hover{
+    color:rgb(0, 255, 34);
+    text-decoration: underline red;
+
+}
+#contact li:hover{
+     color:rgb(0, 255, 34);
+    text-decoration: underline red;
+}
+#infologo li:hover{
+    color:rgb(0, 255, 34);
+    text-decoration: underline red;
+}
+.attraction{
+    position:absolute;
+    justify-content: center;
+    left:15px;
+    bottom:-115vh;
+}
+.onemole{
+    position:absolute;
+     left: 210px;
+     background-color: rgba(255, 253, 253, 0.8);
+     backdrop-filter: blur(20px);
+     font-size: 30px;
+     border:none;
+     border-radius: 20px;
+     width:200px;
+     height:150px;
+     padding:20px;
+     text-align: center;
+     text-transform: capitalize;
+}
+.twomole
+{
+    position: absolute;
+left: 570px;
+background-color: rgba(255, 253, 253, 0.8);
+backdrop-filter: blur(20px);
+font-size: 30px;
+border:none;
+border-radius: 20px;
+width:200px;
+height:150px;
+padding:20px;
+text-align: center;
+text-transform: capitalize;
+}
+.threemole{
+    position: absolute;
+    left:928px;
+    background-color: rgba(255, 253, 253, 0.8);
+    backdrop-filter: blur(20px);
+    font-size: 30px;
+    border:none;
+    border-radius: 20px;
+    width:200px;
+    height:150px;
+    padding:20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+#halka{
+   position:absolute;
+   top:40px;
+   left:43%;
+    color:white;
+   font-size: 13px;
+   text-transform: capitalize;
+   opacity: 50%;
+}
+#bhari{
+    position:absolute;
+    top:400px;
+    left:47%;
+     color:white;
+    font-size: 13px;
+    text-transform: capitalize;
+    opacity: 50%;
+}

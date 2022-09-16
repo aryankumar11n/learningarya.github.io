@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #ff8243;
+        }
+        .container{
+            background-color: black;
+            height:85vh;
+            width:120vh;
+            position: absolute;
+            top:10%;
+            left:23%;
+            color:white;
+            border-radius:10px;
+            
+        }
+        #text{
+            font-size: 40px;
+            text-transform: uppercase;
+            color:#ff2800;
+            font-family:Trebuchet MS;
+            text-align: center;
+            
+        }
+        #small{
+            font-size:15px;
+            color:white;
+            font-family:Comic Sans MS ;
+            text-align: center;
+            
+        }
+        .all input[type="text"] ,input[type="email"],input[type="number"],input[type="password"]{
+            background: none;
+            border:1px solid #00fa9a;
+            border-radius:20px;
+            position:relative;
+            width:220px;
+            height:25px;
+            text-align: center;
+            top:50px;
+            left:35%;
+            color:#00fa9a;
+            text-transform: capitalize;
+            padding:3px;
+        }
+        .all input[type="submit"]{
+            background: none;
+            border:1px solid #00fa9a;
+            border-radius:20px;
+            position:relative;
+            width:60px;
+            height:28px;
+            text-align: center;
+            top:70px;
+            left:46%;
+            color:#00fa9a;
+            text-transform: capitalize;
+        }
+        .all input[type="submit"]:hover{
+            background-color: #00fa9a;
+            color:black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div id="text">
+                create account
+            </div>
+            <div id="small">
+                create account right now !
+            </div>
+            
+            <div class="all">
+                
+                <input type="text" placeholder="first name">
+             
+
+            </div><br>
+             
+            <div class="all">
+                
+                <input type="text" placeholder="last name">
+             
+
+            </div><br>
+            <div class="all">
+                
+                <input type="email" placeholder="email id">
+                
+            </div><br>
+            <div class="all">
+                
+                <input type="password" placeholder="password">
+                
+            </div><br>
+            <div class="all">
+                
+                <input type="number" placeholder="age">
+                
+            </div><br>
+            <div class="all">
+                
+                <input type="text" placeholder="mobile no.">
+                
+            </div><br>
+           
+            <div class="all">
+                <input type="submit" value="submit">
+            </div><br>
+        </form>
+
+    </div>
+</body>
+</html>

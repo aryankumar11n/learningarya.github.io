@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #ff8243;
+        }
+        .container{
+            background-color: black;
+            height:50vh;
+            width:80vh;
+            position: absolute;
+            top:30%;
+            left:30%;
+            color:white;
+            border-radius:10px;
+            
+        }
+        #text{
+            font-size: 40px;
+            text-transform: uppercase;
+            color:#ff2800;
+            font-family:Trebuchet MS;
+            text-align: center;
+            
+        }
+        #small{
+            font-size:15px;
+            color:white;
+            font-family:Comic Sans MS ;
+            text-align: center;
+            
+        }
+        .all input[type="text"] ,input[type="email"]{
+            background: none;
+            border:1px solid #00fa9a;
+            border-radius:20px;
+            position:relative;
+            width:220px;
+            height:25px;
+            text-align: center;
+            top:50px;
+            left:27%;
+            color:#00fa9a;
+            text-transform: capitalize;
+        }
+        .all input[type="submit"]{
+            background: none;
+            border:1px solid #00fa9a;
+            border-radius:20px;
+            position:relative;
+            width:55px;
+            height:25px;
+            text-align: center;
+            top:70px;
+            left:44%;
+            color:#00fa9a;
+            text-transform: capitalize;
+        }
+        .all input[type="submit"]:hover{
+            background-color: #00fa9a;
+            color:black;
+        }
+        #createaccount{
+            position: absolute;
+            top:85%;
+            left:43%;
+            font-size: 14px;
+            color:white;
+            background-color:#ff0800;
+            border :1px solid #ff0800;
+            padding:3px;
+            border-radius: 20px;
+            width:120px;
+            height:25px;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        #logo2 img{
+    
+    width:60vh;
+    height:38vh;
+    opacity: 90%;
+
+}
+#logo2{
+    position: fixed;
+    top:-10vh;
+    left:-8vh;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div id="text">
+                login
+            </div>
+            <div id="small">
+                first login ans start building your carrer<br>
+                with learning arya.com 
+            </div>
+            
+            <div class="all">
+                
+                <input type="text" placeholder="name">
+            </div><br>
+            <div class="all">
+                
+                <input type="email" placeholder="email id">
+            </div>
+            <div class="all">
+                <input type="submit" value="login">
+            </div>
+        </form>
+
+    </div>
+    <a href="createaccount.html"><div id="createaccount">
+         create account
+    </div></a>
+    <div id="logo2">
+        <img src="studylogo.png">
+    </div>
+   </body>
+</html>
